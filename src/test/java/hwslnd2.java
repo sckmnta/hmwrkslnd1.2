@@ -38,6 +38,7 @@ public class hwslnd2 {
         //String url = "https://github.com/enterprise";
         //String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
         //assertEquals(url, currentUrl);
+        assertEquals("https://github.com/enterprise", WebDriverRunner.url());
 
 
     }
