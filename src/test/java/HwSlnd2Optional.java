@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class Hwslnd2Optional {
+public class HwSlnd2Optional {
     @BeforeAll
     static void beforeall() {
         Configuration.holdBrowserOpen = true;

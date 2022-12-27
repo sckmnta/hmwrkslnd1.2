@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Hwslnd2 {
+public class HwSlnd2 {
     @BeforeAll
     static void beforeall() {
         Configuration.holdBrowserOpen = true;
