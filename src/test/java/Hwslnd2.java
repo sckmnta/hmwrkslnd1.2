@@ -1,22 +1,13 @@
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.WebDriverRunner;
-import com.codeborne.selenide.conditions.webdriver.CurrentFrameUrl;
-import com.codeborne.selenide.conditions.webdriver.CurrentFrameUrlContaining;
-import com.codeborne.selenide.conditions.webdriver.Url;
-import com.codeborne.selenide.conditions.webdriver.UrlContaining;
-import com.google.errorprone.annotations.CheckReturnValue;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
-
-import javax.annotation.Nonnull;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class hwslnd2 {
+public class Hwslnd2 {
     @BeforeAll
     static void beforeall() {
         Configuration.holdBrowserOpen = true;
