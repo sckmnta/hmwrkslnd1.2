@@ -1,10 +1,12 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.WebDriverRunner.url;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HwSlnd2 {
@@ -26,10 +28,10 @@ public class HwSlnd2 {
         /// check if it works
         $(".application-main").shouldHave(text("GitHub for enterprises"));
         /// далее попытался сравнить по ожидаемому и выдаваемому урл, но не вышло
-        //String url = "https://github.com/enterprise";
-        //String currentUrl = WebDriverRunner.getWebDriver().getCurrentUrl();
-        //assertEquals(url, currentUrl);
-        //assertEquals("https://github.com/enterprise", WebDriverRunner.url());
+        String expectedUrl = "https://github.com/enterprise";
+        String currentUrl = url();
+        assertEquals(expectedUrl, currentUrl);
+//        assertEquals("https://github.com/enterprise", url());
 
 
     }
